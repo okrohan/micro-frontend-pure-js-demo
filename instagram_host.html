@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script type="text/javascript" src="/moduleLoader/index.js"></script>
+        <script>
+            loadDefaultModule('stories').then((Stories) => {
+                const mountPoint = document.getElementById("stories-mount-point")
+                new Stories(mountPoint, "rounded")
+            });     
+        </script>
+        <style>
+
+        </style>
+    </head>
+    <h2>Instagram</h2>
+    <body>
+        <div id="stories-mount-point">
+        Loading...
+        </div>
+    </body>
+    
+    
+</html>

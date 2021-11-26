@@ -1,11 +1,12 @@
 console.log('[Stories] Loaded!')
-var testValue = "test"
 var MOCK_USERS = ['lorem_ipsum', 'dolor_sit', 'amet_13', 'qui_aliquid']
-class Stories {
-    constructor(mountPoint, variant = 'default'){
+
+export default class Stories {
+    constructor(mountPoint, variant = 'rounded'){
         this.meta = {
             variant
         }
+        console.log('[Stories]: Init ', mountPoint, variant)
         mountPoint.replaceChildren(this.renderStoriesDOM(variant))
     }
 

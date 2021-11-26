@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script type="text/javascript" src="/moduleLoader/index.js"></script>
+        <script>
+            loadDefaultModule('stories').then((Stories) => {
+                new Stories(document.getElementById("stories-mount-point"), "squared")
+            });     
+        </script>
+        <style>
+
+        </style>
+    </head>
+    <h2>Facebook</h2>
+    <body>
+        <div id="stories-mount-point">
+        Loading...
+        </div>
+    </body>
+    
+    
+</html>
